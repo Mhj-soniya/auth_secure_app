@@ -1,0 +1,16 @@
+<div>
+    <h2>Login</h2>
+    <.form :let={f} for={} action={~p"/login"} method="post">
+        <div>
+            <label>Email</label>
+            <.input field={f[:email]} type="text"/>
+        </div>
+        <div>
+            <label>Password</label>
+            <.input field={f[:password]} type="password"/>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </.form>
+</div>
